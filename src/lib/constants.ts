@@ -1,0 +1,1 @@
+export const PERSONAL_DESCRIPTION = `Yael Chavoya is a passionate Full-Stack Software Developer with a diverse set of skills and expertise and a drive to constantly improvewho has developed and deployed mission-critical systems and strategic open source projects, mentored and collaborated with developers from across the globe.`;
