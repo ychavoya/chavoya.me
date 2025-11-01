@@ -1,5 +1,5 @@
 <script lang="ts">
-	import favicon from '$lib/assets/favicon.ico'
+	import favicon from '$lib/assets/favicon.ico';
 	import { PERSONAL_DESCRIPTION } from '$lib/constants';
 	import Footer from '$lib/components/Footer.svelte';
 
@@ -21,6 +21,7 @@
 		--primary-text: #0a4200;
 		--primary-light: #c8d1c7;
 		--background-light: #fbfffa;
+		--accent: #cc6900;
 	}
 
 	:global(body) {
@@ -37,5 +38,14 @@
 
 	:global(h1, h2, h3, h4, h5, h6, p) {
 		margin-block: 0;
+	}
+
+	:global(a) {
+		color: var(--primary-text);
+		text-decoration: underline dotted currentColor;
+		transition: color 0.2s;
+		&:hover {
+			color: var(--primary-color);
+		}
 	}
 </style>

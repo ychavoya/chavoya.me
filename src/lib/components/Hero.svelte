@@ -27,11 +27,14 @@
 			</a>
 		</div>
 		<p class="description">
-			A passionate Full-Stack Software Developer with a diverse set of skills and expertise. I have
-			developed and deployed mission-critical systems and strategic open source projects. I have
-			mentored and collaborated with developers from across the globe. I am an avid and quick
-			learner, with a drive to constantly improve. I believe in the importance of being open-minded,
-			organized and receptive to feedback.
+			Hello! I am Yael, a passionate Full-Stack Software Developer with a diverse set of <a
+				href="#skills">skills</a
+			>
+			and <a href="#experience">expertise</a>. I have developed and deployed mission-critical
+			systems and strategic <a href="#open-source">open source projects</a>. I have mentored and
+			collaborated with developers from across the globe. I am an avid and quick
+			<a href="#certifications">learner</a>, with a drive to constantly improve. I believe in the
+			importance of being open-minded, organized and receptive to feedback.
 		</p>
 	</div>
 	<div class="right-side">
@@ -43,6 +46,8 @@
 	@mixin header {
 		font-family: 'Kodchasan', sans-serif;
 		font-weight: 700;
+		line-height: 1;
+		margin-bottom: 0.8rem;
 	}
 
 	h1 {
