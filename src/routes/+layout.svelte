@@ -24,6 +24,10 @@
 		--accent: #cc6900;
 	}
 
+	:global(html) {
+		scroll-behavior: smooth;
+	}
+
 	:global(body) {
 		margin: 0;
 		background-color: var(--background-light);
@@ -38,6 +42,14 @@
 
 	:global(h1, h2, h3, h4, h5, h6, p) {
 		margin-block: 0;
+	}
+
+	:global(h1) {
+		font-family: 'Kodchasan', sans-serif;
+		font-weight: 700;
+		line-height: 1;
+		margin-bottom: 0.8rem;
+		font-size: 3rem;
 	}
 
 	:global(a) {

@@ -2,8 +2,8 @@
 	import Wip from '$lib/assets/Wip.svelte';
 </script>
 
-<section id="skills">
-	<h1>Skills</h1>
+<section id="experience">
+	<h1>Experience</h1>
 	<div class="wip">
 		<Wip />
 		<p>Oops, I am still working on this part 😅.</p>
@@ -16,29 +16,12 @@
 </section>
 
 <style lang="scss">
-	#skills {
+	#experience {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		background-color: var(--primary-color);
-		color: var(--background-light);
+		justify-content: center;
 		padding: 2rem;
-		gap: 2rem;
-
-		h1 {
-			font-family: 'Kodchasan', sans-serif;
-			font-weight: 700;
-			line-height: 1;
-			margin-bottom: 0.8rem;
-			font-size: 3rem;
-		}
-
-		a {
-			color: var(--background-light);
-			&:hover {
-				color: var(--primary-light);
-			}
-		}
 	}
 
 	.wip {

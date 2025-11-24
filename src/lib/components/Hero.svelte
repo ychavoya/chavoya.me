@@ -1,8 +1,8 @@
 <script>
 	import Linkedin from '$lib/assets/Linkedin.svelte';
-	import Undraw from '$lib/assets/Undraw.svelte';
 	import Mail from '$lib/assets/Mail.svelte';
 	import Github from '$lib/assets/Github.svelte';
+	import Orbit from '$lib/components/Orbit.svelte';
 </script>
 
 <section class="hero">
@@ -12,17 +12,13 @@
 			<h2>Full Stack Software Developer</h2>
 		</div>
 		<div class="links">
-			<a href="https://github.com/ychavoya" target="_blank" aria-label="View Github profile">
+			<a href="https://github.com/ychavoya" target="_blank">
 				<Github />
 			</a>
-			<a
-				href="https://linkedin.com/in/yael-chavoya"
-				target="_blank"
-				aria-label="View LinkedIn profile"
-			>
+			<a href="https://linkedin.com/in/yael-chavoya" target="_blank">
 				<Linkedin />
 			</a>
-			<a href="mailto:yael@chavoya.me" target="_blank" aria-label="Email me">
+			<a href="mailto:yael@chavoya.me" target="_blank">
 				<Mail />
 			</a>
 		</div>
@@ -38,7 +34,7 @@
 		</p>
 	</div>
 	<div class="right-side">
-		<Undraw />
+		<Orbit />
 	</div>
 </section>
 
@@ -82,7 +78,7 @@
 		gap: 2rem;
 	}
 
-	.right-side {
+  .right-side {
 		height: 100vh;
 		width: 100vh;
 		max-width: 60%;
@@ -92,14 +88,7 @@
 			max-width: 100%;
 		}
 		background-color: var(--primary-light);
-		display: flex;
-		justify-content: center;
-		align-items: center;
 		overflow: hidden;
-
-		:global(svg) {
-			width: 60%;
-		}
 	}
 
 	.links {
