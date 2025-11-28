@@ -3,6 +3,7 @@
 	import Mail from '$lib/assets/Mail.svelte';
 	import Github from '$lib/assets/Github.svelte';
 	import Orbit from '$lib/components/Orbit.svelte';
+	import Credly from '$lib/assets/Credly.svelte';
 </script>
 
 <section class="hero">
@@ -21,6 +22,9 @@
 			<a href="mailto:yael@chavoya.me" target="_blank">
 				<Mail />
 			</a>
+			<a href="https://www.credly.com/users/yael-chavoya" target="_blank" style="scale: 1.5"
+				><Credly /></a
+			>
 		</div>
 		<p class="description">
 			Hello! I am Yael, a passionate Full-Stack Software Developer with a diverse set of <a
@@ -78,7 +82,7 @@
 		gap: 2rem;
 	}
 
-  .right-side {
+	.right-side {
 		height: 100vh;
 		width: 100vh;
 		max-width: 60%;
@@ -98,6 +102,7 @@
 		gap: 0.5rem;
 
 		a {
+			height: 3.5rem;
 			width: 3.5rem;
 
 			:global(svg path) {
