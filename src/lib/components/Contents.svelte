@@ -1,6 +1,7 @@
 <script lang="ts">
 	import MenuIcon from '$lib/assets/MenuIcon.svelte';
 	import { onMount } from 'svelte';
+	import { resolve } from '$app/paths';
 
 	let showContents = $state(false);
 
@@ -8,7 +9,7 @@
 		{ label: 'About Me', href: '/#' },
 		{ label: 'Skills', href: '/#skills' },
 		{ label: 'Experience', href: '/#experience' },
-		{ label: 'Certifications', href: '/#certifications' },
+		{ label: 'Certifications', href: '/#certifications' }
 	];
 
 	onMount(() => {
@@ -31,8 +32,8 @@
 		<MenuIcon />
 	</button>
 	<div class="menu {showContents ? 'shown' : ''}">
-		{#each menuItems as item}
-			<a class="item" href={item.href}>{item.label}</a>
+		{#each menuItems as item (item.label)}
+			<a class="item" href={resolve(item.href)}>{item.label}</a>
 		{/each}
 	</div>
 </div>

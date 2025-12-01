@@ -62,7 +62,7 @@
 	}
 
 	:global(code) {
-			font-family: 'Martian Mono', monospace;
-			font-size: 1.05rem;
+		font-family: 'Martian Mono', monospace;
+		font-size: 1.05rem;
 	}
 </style>

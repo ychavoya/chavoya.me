@@ -45,7 +45,7 @@
 		alt="Yael Chavoya"
 		style="translate: {coords.x}px {coords.y}px"
 	/>
-	{#each skills as svg, index}
+	{#each skills as svg, index (index)}
 		<img
 			class="satellite"
 			src={svg}

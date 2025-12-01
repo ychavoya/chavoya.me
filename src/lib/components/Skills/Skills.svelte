@@ -1,5 +1,5 @@
 <script lang="ts">
-	import skills from '\$lib/skills';
+	import skills from '$lib/skills';
 	import SkillComponent from '$lib/components/Skills/SkillComponent.svelte';
 	import { CODE } from '$lib/constants';
 </script>

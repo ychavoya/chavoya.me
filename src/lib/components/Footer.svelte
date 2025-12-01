@@ -22,6 +22,10 @@
 		padding-inline: 2rem;
 		padding-block: 3rem;
 
+		@media screen and (max-width: 800px) {
+			flex-direction: column;
+		}
+
 		a {
 			color: var(--background-light);
 
