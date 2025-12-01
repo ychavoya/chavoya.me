@@ -1,9 +1,12 @@
 <script>
+	import Github from '$lib/assets/Github.svelte';
+
 	const year = new Date().getFullYear();
 </script>
 
 <footer>
 	<p>© {year} &CenterDot; Yael Chavoya</p>
+	<p><a href="https://github.com/ychavoya/chavoya.me"><Github /> View source code</a></p>
 </footer>
 
 <style lang="scss">
@@ -12,9 +15,30 @@
 		background: var(--primary-text);
 		color: var(--background-light);
 		display: flex;
-		flex-direction: column;
-		justify-content: center;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		gap: 2rem;
 		padding-inline: 2rem;
 		padding-block: 3rem;
+
+		a {
+			color: var(--background-light);
+
+			:global(svg) {
+				width: 1.2rem;
+			}
+
+			:global(svg path) {
+				fill: var(--background-light);
+			}
+			&:hover {
+				color: var(--primary-light);
+
+				:global(svg path) {
+					fill: var(--primary-light);
+				}
+			}
+		}
 	}
 </style>
