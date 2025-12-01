@@ -8,10 +8,20 @@
 	import gitSvg from '$lib/assets/skills/git.svg';
 	import springSvg from '$lib/assets/skills/spring.svg';
 	import pythonSvg from '$lib/assets/skills/python.svg';
+	import javascriptSvg from '$lib/assets/skills/javascript.svg';
 
 	const ORBIT_DURATION = 40;
 	const PARALLAX_STRENGTH = 5;
-	const skills = [reactSvg, javaSvg, kubernetesSvg, kafkaSvg, gitSvg, springSvg, pythonSvg];
+	const skills = [
+		reactSvg,
+		javaSvg,
+		kubernetesSvg,
+		kafkaSvg,
+		gitSvg,
+		springSvg,
+		pythonSvg,
+		javascriptSvg
+	];
 
 	const coords = $state({ x: 0, y: 0 });
 

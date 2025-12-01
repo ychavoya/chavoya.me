@@ -40,7 +40,7 @@
 		line-height: 1.3;
 	}
 
-	:global(h1, h2, h3, h4, h5, h6, p) {
+	:global(h1, h2, h3, h4, h5, h6, p, code) {
 		margin-block: 0;
 	}
 
@@ -59,5 +59,10 @@
 		&:hover {
 			color: var(--primary-color);
 		}
+	}
+
+	:global(code) {
+			font-family: 'Martian Mono', monospace;
+			font-size: 1.05rem;
 	}
 </style>
