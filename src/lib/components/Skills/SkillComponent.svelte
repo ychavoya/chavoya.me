@@ -26,6 +26,7 @@
 
 		img {
 			width: 4rem;
+			user-select: none;
 		}
 
 		.content {

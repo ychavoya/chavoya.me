@@ -120,6 +120,7 @@
 		z-index: var(--profile-z);
 		animation: profile 20s alternate linear infinite;
 		grid-area: 1/1;
+		user-select: none;
 	}
 
 	.satellite {
@@ -133,6 +134,7 @@
 		z-index: var(--z);
 		animation: orbit-around linear infinite;
 		grid-area: 1/1;
+		user-select: none;
 	}
 
 	@media screen and (max-width: 1300px) {
