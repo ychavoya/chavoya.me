@@ -72,6 +72,7 @@
 			width: 0;
 			padding: 0;
 			border: 3px solid var(--primary-text);
+			border-bottom-left-radius: 10px;
 			border-inline-end: 0;
 			background-color: var(--background-light);
 			z-index: 21;
@@ -80,7 +81,7 @@
 			transition: width 0.3s ease-in-out;
 
 			&.shown {
-				width: 12rem;
+				width: 11rem;
 			}
 
 			.item {

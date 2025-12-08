@@ -10,9 +10,11 @@
 	</div>
 	<div class="content">
 		<h1>Skills</h1>
-		{#each skills as skill (skill.title)}
-			<SkillComponent {skill} />
-		{/each}
+		<div class="cards">
+			{#each skills as skill (skill.title)}
+				<SkillComponent {skill} />
+			{/each}
+		</div>
 	</div>
 </section>
 <div class="triangle"></div>
@@ -35,6 +37,19 @@
 			align-items: center;
 			gap: 2rem;
 			z-index: 1;
+
+			.cards {
+				display: grid;
+				grid-template-columns: repeat(4, 1fr);
+				gap: 1rem;
+
+				@media screen and (max-width: 1300px) {
+					grid-template-columns: repeat(2, 1fr);
+        }
+				@media screen and (max-width: 800px) {
+					grid-template-columns: repeat(1, 1fr);
+        }
+			}
 		}
 	}
 

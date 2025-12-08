@@ -6,7 +6,9 @@
 
 <footer>
 	<p>© {year} &CenterDot; Yael Chavoya</p>
-	<p><a href="https://github.com/ychavoya/chavoya.me"><Github /> View source code</a></p>
+	<p>
+		<a href="https://github.com/ychavoya/chavoya.me" target="_blank"><Github /> View source code</a>
+	</p>
 </footer>
 
 <style lang="scss">
