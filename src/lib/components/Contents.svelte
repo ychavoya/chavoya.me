@@ -47,6 +47,7 @@
 		flex-direction: row;
 		align-items: flex-start;
 		z-index: 20;
+		pointer-events: none;
 
 		.toggler {
 			border: 3px solid var(--primary-text);
@@ -58,6 +59,8 @@
 			cursor: pointer;
 			margin-right: -3px;
 			z-index: 22;
+			pointer-events: auto;
+
 			:global(svg) {
 				width: 2rem;
 				fill: var(--primary-text);
@@ -79,6 +82,7 @@
 			display: flex;
 			flex-direction: column;
 			transition: width 0.3s ease-in-out;
+			pointer-events: auto;
 
 			&.shown {
 				width: 11rem;
