@@ -48,7 +48,6 @@
 		font-family: 'Kodchasan', sans-serif;
 		font-weight: 700;
 		line-height: 1;
-		margin-bottom: 0.8rem;
 		font-size: 3rem;
 	}
 

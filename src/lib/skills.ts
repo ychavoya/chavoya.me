@@ -19,7 +19,9 @@ import flagSvg from '$lib/assets/skills/flag.svg';
 import mentoringSvg from '$lib/assets/skills/mentoring.svg';
 import laravelSvg from '$lib/assets/skills/laravel.svg';
 
-export type Category = 'Front End' | 'Back End' | 'DevOps';
+export const CATEGORIES = ['Front End', 'Back End', 'DevOps', 'Other'];
+
+export type Category = (typeof CATEGORIES)[number];
 
 export interface Skill {
 	title: string;
@@ -34,7 +36,7 @@ const skills: Skill[] = [
 		title: 'Javascript, Typescript',
 		description: 'Node.js, Angular, React, Vue, Svelte, Modules, CommonJS',
 		icon: javascriptSvg,
-		categories: ['Front End']
+		categories: ['Front End', 'Back End']
 	},
 	{
 		title: 'Java',
@@ -46,7 +48,7 @@ const skills: Skill[] = [
 		title: 'Test Driven Development',
 		description: 'Jest, JUnit, unit testing, integration testing',
 		icon: jestSvg,
-		categories: ['Front End', 'Back End']
+		categories: ['Front End', 'Back End', 'DevOps']
 	},
 	{
 		title: 'Containers',
@@ -63,7 +65,8 @@ const skills: Skill[] = [
 	{
 		title: 'Version control',
 		description: 'git, branch and tag management, repository configuration',
-		icon: gitSvg
+		icon: gitSvg,
+		categories: ['DevOps', 'Other']
 	},
 	{
 		title: 'Continuous Integration and Deployment',
@@ -71,7 +74,7 @@ const skills: Skill[] = [
 		icon: travisSvg,
 		categories: ['DevOps']
 	},
-	{ title: 'Vulnerability and threat management', icon: bugSvg },
+	{ title: 'Vulnerability and threat management', icon: bugSvg, categories: ['DevOps'] },
 	{
 		title: 'SQL',
 		description: 'Postgres, MySQL, DB2',
@@ -85,21 +88,38 @@ const skills: Skill[] = [
 		categories: ['Back End']
 	},
 	{ title: 'Elasticsearch', icon: elasticSearchSvg, categories: ['Back End'] },
-	{ title: 'Apache Kafka', description: 'Asynchronous event streaming', icon: kafkaSvg },
+	{
+		title: 'Apache Kafka',
+		description: 'Asynchronous event streaming',
+		icon: kafkaSvg,
+		categories: ['Back End']
+	},
 	{
 		title: 'Feature flagging',
 		description: 'Canary releases, A/B testing, dark deployments',
-		icon: flagSvg
+		icon: flagSvg,
+		categories: ['DevOps']
 	},
 	{
 		title: 'Project Management',
 		icon: jiraSvg,
-		description: 'Use of Agile and Kanban, and relevant platforms such as Jira'
+		description: 'Use of Agile and Kanban, and relevant platforms such as Jira',
+		categories: ['Other']
 	},
-	{ title: 'Mentoring and Coaching', icon: mentoringSvg },
-	{ title: 'Nginx', description: '.conf files, deployment', icon: nginxSvg },
-	{ title: 'Quantum Computing', description: 'IBM Qiskit', icon: qiskitSvg },
-	{ title: 'Python', description: 'Scripting, Jupyter Notebook', icon: pythonSvg },
+	{ title: 'Mentoring and Coaching', icon: mentoringSvg, categories: ['Other'] },
+	{
+		title: 'Nginx',
+		description: '.conf files, deployment',
+		icon: nginxSvg,
+		categories: ['Back End', 'DevOps']
+	},
+	{ title: 'Quantum Computing', description: 'IBM Qiskit', icon: qiskitSvg, categories: ['Other'] },
+	{
+		title: 'Python',
+		description: 'Scripting, Jupyter Notebook',
+		icon: pythonSvg,
+		categories: ['Other']
+	},
 	{ title: 'C#', description: '.NET', icon: dotnetSvg, categories: ['Back End'] },
 	{
 		title: 'PHP',
