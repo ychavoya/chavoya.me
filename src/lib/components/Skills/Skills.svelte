@@ -95,6 +95,7 @@
 					&.active {
 						background-color: var(--primary-text);
 						font-weight: bold;
+						color: var(--accent);
 					}
 				}
 			}
