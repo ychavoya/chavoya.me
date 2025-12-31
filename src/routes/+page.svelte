@@ -1,7 +1,7 @@
 <script>
 	import Hero from '$lib/components/Hero.svelte';
 	import Skills from '$lib/components/Skills/Skills.svelte';
-	import Experience from '$lib/components/Experience.svelte';
+	import Experience from '$lib/components/Experience/Experience.svelte';
 	import Contents from '$lib/components/Contents.svelte';
 </script>
 

@@ -1,5 +1,6 @@
 <script>
-	import Wip from '$lib/assets/Wip.svelte';
+	import experience from '$lib/experience';
+	import ExperienceComponent from '$lib/components/Experience/ExperienceComponent.svelte';
 </script>
 
 <section id="experience">
@@ -9,21 +10,21 @@
 	</div>
 	<div class="content">
 		<h1>Experience</h1>
-		<div class="wip">
-			<Wip />
-			<p>Oops, I am still working on this part 😅.</p>
-			<p>
-				In the meantime, you can check this out on my <a href="https://linkedin.com/in/yael-chavoya"
-					>LinkedIn</a
-				>
-			</p>
-		</div>
+		{#each experience as item (item)}
+			<ExperienceComponent {item} />
+		{/each}
 	</div>
 </section>
 
 <style lang="scss">
 	#experience {
 		background-color: var(--background-light);
+		background-image: url('$lib/assets/squares-bottom.svg');
+		background-repeat: repeat-x;
+		background-position-y: bottom;
+		--bottom-margin: 4rem;
+		background-size: auto var(--bottom-margin);
+		padding-bottom: var(--bottom-margin);
 	}
 
 	.content {
@@ -32,6 +33,13 @@
 		align-items: center;
 		justify-content: center;
 		padding: 2rem;
+		max-width: 1920px;
+		margin: 0 auto;
+
+		h1 {
+			color: var(--primary-text);
+			margin-bottom: 1rem;
+		}
 	}
 
 	.triangles {
@@ -56,20 +64,6 @@
 				border-color: transparent transparent var(--background-light) transparent;
 				right: 0;
 			}
-		}
-	}
-
-	.wip {
-		flex-grow: 1;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-
-		:global(svg) {
-			width: 25rem;
-			height: auto;
-			margin-bottom: 2rem;
 		}
 	}
 </style>
