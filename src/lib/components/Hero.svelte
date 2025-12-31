@@ -54,7 +54,7 @@
 		@include header;
 		font-size: 6rem;
 		color: var(--primary-text);
-		@media screen and (max-width: 800px) {
+		@media screen and (max-width: 1000px) {
 			font-size: 4rem;
 		}
 	}
@@ -67,8 +67,9 @@
 	.hero {
 		display: flex;
 		flex-direction: row;
+		justify-content: flex-end;
 
-		@media screen and (max-width: 800px) {
+		@media screen and (max-width: 1000px) {
 			flex-direction: column;
 		}
 	}
@@ -80,16 +81,18 @@
 		justify-content: center;
 		margin: 2rem;
 		gap: 2rem;
+		max-width: 1000px;
 	}
 
 	.right-side {
 		height: 100vh;
-		width: 100vh;
-		max-width: 60%;
-		@media screen and (max-width: 800px) {
+		width: 50%;
+		max-height: 2000px;
+		@media screen and (max-width: 1000px) {
 			height: 100vw;
 			width: 100vw;
 			max-width: 100%;
+			max-height: 400px;
 		}
 		background-color: var(--primary-light);
 		overflow: hidden;

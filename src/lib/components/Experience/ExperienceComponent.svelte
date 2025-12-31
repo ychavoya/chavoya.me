@@ -8,9 +8,9 @@
 	<h2>
 		{item.title}
 	</h2>
-	<h3>{item.company} <span class="period">({item.period})</span></h3>
+	<h3>{item.company}<span class="period">({item.period})</span></h3>
 	<ul>
-		{#each item.description as line}
+		{#each item.description as line (line)}
 			<li>{line}</li>
 		{/each}
 	</ul>
@@ -20,14 +20,12 @@
 	.item {
 		margin-bottom: 2rem;
 		width: 100%;
-		@media screen and (max-width: 1200px) {
-			text-align: center;
-		}
 	}
 	h2 {
 		font-family: 'Kodchasan', sans-serif;
 		color: var(--primary-text);
 		font-size: 1.8rem;
+		font-weight: 500;
 	}
 	h3 {
 		font-family: 'Lato', sans-serif;
@@ -35,6 +33,7 @@
 		& span {
 			font-weight: normal;
 			font-size: 1.1rem;
+			margin-inline: 0.3rem;
 		}
 	}
 
