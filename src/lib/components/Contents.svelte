@@ -8,8 +8,7 @@
 	const menuItems = [
 		{ label: 'About Me', href: '/#' },
 		{ label: 'Skills', href: '/#skills' },
-		{ label: 'Experience', href: '/#experience' },
-		{ label: 'Certifications', href: '/#certifications' }
+		{ label: 'Experience', href: '/#experience' }
 	];
 
 	onMount(() => {
