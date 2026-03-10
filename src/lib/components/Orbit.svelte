@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import profile from '$lib/assets/profile.jpeg';
+	import profile from '$lib/assets/profile.jpg';
 	import reactSvg from '$lib/assets/skills/react.svg';
 	import javaSvg from '$lib/assets/skills/java.svg';
 	import kubernetesSvg from '$lib/assets/skills/kubernetes.svg';
