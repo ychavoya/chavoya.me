@@ -19,7 +19,7 @@
 			<a href="https://linkedin.com/in/yael-chavoya" target="_blank">
 				<Linkedin />
 			</a>
-			<a href="mailto:yael@chavoya.me" target="_blank">
+			<a href="mailto:contact@chavoya.me" target="_blank">
 				<Mail />
 			</a>
 			<a href="https://www.credly.com/users/yael-chavoya" target="_blank" style="scale: 1.5"
